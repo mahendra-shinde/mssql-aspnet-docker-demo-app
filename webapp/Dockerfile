@@ -1,4 +1,4 @@
-FROM microsoft/aspnetcore-build:latest
+FROM microsoft/aspnetcore-build:1.1
 
 COPY . /app
 
