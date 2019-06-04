@@ -1,4 +1,4 @@
-FROM microsoft/aspnetcore-build:1.1
+FROM microsoft/aspnetcore:1.1.11-nanoserver-sac2016
 
 COPY . /app
 
@@ -10,6 +10,4 @@ RUN ["dotnet", "build"]
 
 EXPOSE 80/tcp
 
-RUN chmod +x ./entrypoint.sh
 
-CMD /bin/bash ./entrypoint.sh
