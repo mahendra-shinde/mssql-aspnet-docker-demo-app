@@ -13,7 +13,7 @@ services:
             DatabaseUser: "sa"
             DatabaseUserPassword: "Yukon900"
     db:
-        image: "microsoft/mssql-server-linux"
+        image: "microsoft/mssql-server-windows-express"
         ports: 
             - "1433:1433"
         environment:
